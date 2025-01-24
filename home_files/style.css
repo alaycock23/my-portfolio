@@ -38,6 +38,7 @@ body {
     font-weight: bold; /* Make the text bold */
   }
   
+
   /* Navigation link styles */
   nav a {
     color: rgb(235, 249, 255); /* Link text color */
@@ -67,8 +68,7 @@ body {
   }
   
   .inprogress {
-    
-    width: 800px;
+    width: 40%;
     height: auto;
     position: relative;
     left: 5.5%;
