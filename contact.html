@@ -37,16 +37,14 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => {
         const email = 'alaycock' + '@' + 'seas.upenn.edu';
-        document.getElementById('email').innerHTML = `<a href="mailto:${email}">${email}</a>`;
+        document.getElementById('email').innerHTML = `Email: <a href="mailto:${email}">${email}</a>`;
     });
-  </script>
 
-  <script>
     document.addEventListener('DOMContentLoaded', () => {
       // Split the phone number to avoid direct scraping
       const phoneNumber = '+1' + '-' + '805' + '-' + '342' + '-' + '7296';
       // Add the clickable link
-      document.getElementById('phone').innerHTML = `<a href="tel:${phoneNumber}">${phoneNumber}</a>`;
+      document.getElementById('phone').innerHTML = `Phone: <a href="tel:${phoneNumber}">${phoneNumber}</a>`;
     });
   </script>
 
