@@ -76,7 +76,7 @@ body {
   
   /* Main content styles */
   main {
-    /*max-width: 10000px; /* Limit the width of the content */
+    max-width: 1000px; /* Limit the width of the content */
     margin: 20px auto; /* Center the content and add vertical spacing */
     padding: 20px; /* Add space inside the content box */
     /*background: rgb(255, 255, 255); /* White background for content */
