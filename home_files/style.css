@@ -29,7 +29,7 @@ body {
     align-items: center; /* Center items vertically */
     /*background-color: #000000; /* Blue background color */
     padding: 10px 2%; /* Add space inside the navbar */
-    color: rgb(235, 249, 255); /* Offwhite text for the navbar */
+    /*color: rgb(235, 249, 255); /* Offwhite text for the navbar */
   }
   
   /* Logo (your name) styles */
@@ -79,6 +79,7 @@ body {
     max-width: 1000px; /* Limit the width of the content */
     margin: 20px auto; /* Center the content and add vertical spacing */
     padding: 20px; /* Add space inside the content box */
+    line-height: 2;
     /*background: rgb(255, 255, 255); /* White background for content */
     /*border-radius: 8px; /* Slightly rounded corners */
     /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
