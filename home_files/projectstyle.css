@@ -3,6 +3,9 @@ html, body {
     height: 100%; /* Full height for both */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
+    background: linear-gradient(to bottom, #050112, #072335);
+    background-attachment: fixed;
+    /*overflow: hidden */
   }
 body {
     font-family: Arial, sans-serif; /* Use a clean, sans-serif font */
@@ -10,9 +13,8 @@ body {
     padding: 0; /* Remove default padding */
     line-height: 1.6; /* Improve text readability */
     /* Use a linear gradient (top to bottom) */
-    background: linear-gradient(to bottom, #050112, #072335);
     /* Fallback color for older browsers that don't support gradients */
-    background-color: #050112;
+    
     margin: 0;
     padding: 0;
     font-size: 20px;
@@ -84,28 +86,52 @@ body {
     /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
   }
 
-  .about-container {
-    position: relative;
-    top: -3.5vh; /* Moves the container up */
-    width: 100%; /* Ensures full width */
-    max-width: 1000px; /* Optional: adjust based on your layout */
-    margin: 0 auto; /* Centers the container */
-    overflow: hidden; /* Keeps floated elements inside */
-    /*display: block; /* Prevents flexbox interference */
+  /* Projects Grid */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 7vh 5vh;
+    max-width: 73vw;
+    margin: 3vh auto;
   }
-
-  .about-container img {
-    width: 30vh; /* Adjust size */
-    height: auto;
-    border-radius: 1vh; /* Optional rounded corners */
-    margin: 3.5vh 2vh 0 0; /* Adds spacing around image */
-    float: left; /* Enables text wrapping */
-    display: block; /* Prevents inline spacing issues */
+  
+  /* Project Card Styles */
+  .project-card {
+    background-color: rgb(30, 70, 93);
+    /*border: 1px solid #ddd;*/
+    border-radius: 10px;
+    padding: 0;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    height: 47vh
   }
-
-  .about-text {
-    text-align: left;
-    text-indent: 6vh;
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(235, 249, 255, 0.53);
+  }
+  
+  .project-card a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .project-image {
     width: 100%;
-    /*overflow: hidden; /* Ensures text stays aligned and wrapped properly */
+    height: 40vh;
+    object-fit: cover;
+  }
+  
+  .project-title {
+    position: relative;
+    top: -.7vh; /* Moves the title upward */
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(235, 249, 255);
+  }
+
+  .spacing {
+    padding: 10vh;
   }
