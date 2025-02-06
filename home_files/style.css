@@ -15,7 +15,7 @@ body {
     background-color: #050112;
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 1vw;
     font-family: Arial, sans-serif;
     text-align: center;
     color: rgb(235, 249, 255); /* Dark gray text color */
@@ -33,7 +33,7 @@ body {
   
   /* Logo (your name) styles */
   .logo {
-    font-size: 40px; /* Slightly larger font for the logo */
+    font-size: 2vw; /* Slightly larger font for the logo */
     font-weight: bold; /* Make the text bold */
   }
   
@@ -42,8 +42,8 @@ body {
   nav a {
     color: rgb(235, 249, 255); /* Link text color */
     text-decoration: none; /* Remove the default underline */
-    margin: 0 15px; /* Space between links */
-    font-size: 20px; /* Font size for links */
+    margin: 0 0.9vw; /* Space between links */
+    font-size: 1.2vw; /* Font size for links */
     position: relative; /* Needed for the pseudo-element */
     font-weight: bold;
   }
@@ -113,8 +113,9 @@ body {
 
   /* image-carousel.css */
   .carousel-container {
-  position: absolute;
-  bottom: 1vh;
+  position: relative;
+  top: -9vh;
+  bottom: 2vh;
   overflow: hidden;
   width: 100%;
   }
