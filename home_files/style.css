@@ -15,7 +15,7 @@ body {
     background-color: #050112;
     margin: 0;
     padding: 0;
-    font-size: 1vw;
+    font-size: 2.2vh;
     font-family: Arial, sans-serif;
     text-align: center;
     color: rgb(235, 249, 255); /* Dark gray text color */
@@ -33,7 +33,7 @@ body {
   
   /* Logo (your name) styles */
   .logo {
-    font-size: 2vw; /* Slightly larger font for the logo */
+    font-size: 4.4vh; /* Slightly larger font for the logo */
     font-weight: bold; /* Make the text bold */
   }
   
@@ -42,7 +42,7 @@ body {
   nav a {
     color: rgb(235, 249, 255); /* Link text color */
     text-decoration: none; /* Remove the default underline */
-    margin: 0 0.9vw; /* Space between links */
+    margin: 0 2.2vh; /* Space between links */
     font-size: 1.2vw; /* Font size for links */
     position: relative; /* Needed for the pseudo-element */
     font-weight: bold;
