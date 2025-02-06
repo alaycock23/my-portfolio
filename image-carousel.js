@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const totalImages = images.length;
     let index = totalImages; // Start at first real image after clones
     let isTransitioning = false;
+    let stepSize = 0; // Will be set after images load
 
     // Function to calculate the average step size
     function getAverageImageWidth() {
@@ -17,8 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return totalWidth / totalImages; // Average width per image
     }
 
-    let stepSize = getAverageImageWidth(); // Use the average image width
-
     // Clone images for seamless effect
     images.forEach(img => {
         let cloneStart = img.cloneNode(true);
@@ -31,8 +30,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const allImages = document.querySelectorAll(".carousel img");
     const totalSlides = allImages.length;
 
-    // Set initial position
-    carousel.style.transform = `translateX(-${index * stepSize}px)`;
+    // Ensure step size is set only **after** images load
+    window.onload = () => {
+        stepSize = getAverageImageWidth();
+        carousel.style.transform = `translateX(-${index * stepSize}px)`;
+    };
 
     // Function to move carousel
     function moveCarousel(newIndex) {
