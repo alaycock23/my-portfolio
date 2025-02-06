@@ -75,6 +75,8 @@ body {
   
   /* Main content styles */
   main {
+    position: relative;
+    top: -5vh; /* Moves the container up */
     max-width: 1000px; /* Limit the width of the content */
     margin: 20px auto; /* Center the content and add vertical spacing */
     padding: 20px; /* Add space inside the content box */
@@ -86,7 +88,6 @@ body {
 
   .about-container {
     position: relative;
-    top: -3.5vh; /* Moves the container up */
     width: 100%; /* Ensures full width */
     max-width: 1000px; /* Optional: adjust based on your layout */
     margin: 0 auto; /* Centers the container */
@@ -108,4 +109,52 @@ body {
     text-indent: 6vh;
     width: 100%;
     /*overflow: hidden; /* Ensures text stays aligned and wrapped properly */
+  }
+
+  /* image-carousel.css */
+  .carousel-container {
+  position: absolute;
+  bottom: 1vh;
+  overflow: hidden;
+  width: 100%;
+  }
+
+  .carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  }
+
+  .carousel img {
+  height: 70vh;
+  padding: 0.5vh;
+  border-radius: 2vh;
+  flex: none;
+  width: auto;
+  object-fit: cover;
+  }
+
+  .carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #000000a9;
+  color: rgb(235, 249, 255);
+  border: none;
+  font-size: 4vh;
+  width: 6vh;
+  height: 10vh;
+  /*border-radius: 50%;*/
+  cursor: pointer;
+  }
+
+  .carousel-button:hover {
+    background: #000000d7; /* Darker color on hover */
+  }
+
+  .left {
+  left: 10px;
+  }
+
+  .right {
+  right: 10px;
   }
