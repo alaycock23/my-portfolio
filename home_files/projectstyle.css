@@ -104,7 +104,7 @@ body {
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
-    height: 47vh
+    height: 100%;
   }
   
   .project-card:hover {
